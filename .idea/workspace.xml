@@ -12,6 +12,13 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1YLkdAlGjyoRPXcDZhqymyszEkX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,8 +38,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../instagram-mini-project/node_modules/typescript/lib" />
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../instagram-mini-project/tools" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start:dev">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -43,8 +56,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../instagram-mini-project/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -59,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582729347157</updated>
-      <workItem from="1582729349959" duration="1655000" />
+      <workItem from="1582729349959" duration="8458000" />
     </task>
     <servers />
   </component>
@@ -67,21 +91,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1388" height="232" key="GridCell.Tab.0.bottom" timestamp="1582877551196">
+    <state width="1388" height="273" key="GridCell.Tab.0.bottom" timestamp="1582886377056">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="232" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582877551196" />
-    <state width="1388" height="232" key="GridCell.Tab.0.center" timestamp="1582877551194">
+    <state width="1388" height="273" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582886377056" />
+    <state width="1388" height="273" key="GridCell.Tab.0.center" timestamp="1582886377055">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="232" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582877551194" />
-    <state width="1388" height="232" key="GridCell.Tab.0.left" timestamp="1582877551194">
+    <state width="1388" height="273" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582886377055" />
+    <state width="1388" height="273" key="GridCell.Tab.0.left" timestamp="1582886377054">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="232" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582877551194" />
-    <state width="1388" height="232" key="GridCell.Tab.0.right" timestamp="1582877551195">
+    <state width="1388" height="273" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582886377054" />
+    <state width="1388" height="273" key="GridCell.Tab.0.right" timestamp="1582886377056">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="232" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582877551195" />
+    <state width="1388" height="273" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582886377056" />
   </component>
 </project>
