@@ -1,10 +1,10 @@
-import  { Router} from "express";
+import { Router} from "express";
+import HomeRouter from "./home.router";
+import linkRouter from "./link.router";
 
-const HomeRouter = Router();
+const rootRouter = Router();
 
-/* GET home page. */
-HomeRouter.get('/', (req:any, res:any) => {
-  res.render('index', { title: 'Express' });
-});
+rootRouter.use("/", HomeRouter);
+rootRouter.use("/", linkRouter);
 
-export default HomeRouter;
+export default rootRouter;

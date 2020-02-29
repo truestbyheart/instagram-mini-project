@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    include partials/nav
+    br
+    div(class="container is-fullhd")
+        div(class="level columns")
+          include partials/loading-input
