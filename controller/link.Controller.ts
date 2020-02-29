@@ -23,8 +23,9 @@ class LinkController {
 
                 // @ts-ignore
                 const  g = JSON.parse(graphQLJSON);
+                const media = g.entry_data.PostPage[0].graphql.shortcode_media;
 
-                res.json(g.entry_data);
+                res.json(media);
             })
             .catch(error => {
                 const errorMessage = {
