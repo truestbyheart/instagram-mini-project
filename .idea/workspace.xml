@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1890df8a-0e85-4cb6-a787-1a191fab1577" name="Default Changelist" comment="" />
+    <list default="true" id="1890df8a-0e85-4cb6-a787-1a191fab1577" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/helper/igPostDifference.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/link.Controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controller/link.Controller.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YLkdAlGjyoRPXcDZhqymyszEkX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,6 +37,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.14.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,11 +46,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../instagram-mini-project/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../instagram-mini-project/tools" />
+      <recent name="$PROJECT_DIR$/tools" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start:dev">
@@ -57,7 +66,7 @@
       <method v="2" />
     </configuration>
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../instagram-mini-project/package.json" />
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="start:dev" />
@@ -84,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582729347157</updated>
       <workItem from="1582729349959" duration="8458000" />
+      <workItem from="1583054620992" duration="10109000" />
     </task>
     <servers />
   </component>
@@ -107,5 +117,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1388" height="273" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582886377056" />
+    <state x="2181" y="457" key="NewPhpFileDialog" timestamp="1583073809838">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2181" y="457" key="NewPhpFileDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583073809838" />
+    <state x="105" y="1" key="SettingsEditor" timestamp="1583059812186">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="105" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583059812186" />
   </component>
 </project>

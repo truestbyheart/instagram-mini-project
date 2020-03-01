@@ -1,5 +1,6 @@
 import cheerio from "cheerio";
 import axios from "axios";
+import { filterIgData } from "../helper/igPostDifference";
 
 
 interface ILinks {
@@ -23,12 +24,12 @@ class LinkController {
 
                 // @ts-ignore
                 const  g = JSON.parse(graphQLJSON);
-                const media = g.entry_data.PostPage[0].graphql.shortcode_media;
-
-                res.json(media);
+                const mediaObject = g.entry_data.PostPage[0].graphql.shortcode_media;
+                const filteredResult: any = filterIgData(mediaObject);
+                res.json(filteredResult);
             })
             .catch(error => {
-                const errorMessage = {
+                const errorMessage: string | any = {
                     message: "OOOPS..something went wrong",
                     error,
                     status: 400
