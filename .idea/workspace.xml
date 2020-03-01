@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1890df8a-0e85-4cb6-a787-1a191fab1577" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/helper/igPostDifference.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/filesaver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/input.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/single.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/link.Controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controller/link.Controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/bulma.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/fontawesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/loading-input.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="Pug File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -93,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582729347157</updated>
       <workItem from="1582729349959" duration="8458000" />
-      <workItem from="1583054620992" duration="10109000" />
+      <workItem from="1583054620992" duration="22887000" />
     </task>
     <servers />
   </component>
@@ -101,21 +114,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1388" height="273" key="GridCell.Tab.0.bottom" timestamp="1582886377056">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1868" height="275" key="GridCell.Tab.0.bottom" timestamp="1583095333561">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1868" height="275" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583095333561" />
     <state width="1388" height="273" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582886377056" />
-    <state width="1388" height="273" key="GridCell.Tab.0.center" timestamp="1582886377055">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1868" height="275" key="GridCell.Tab.0.center" timestamp="1583095333558">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1868" height="275" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583095333558" />
     <state width="1388" height="273" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582886377055" />
-    <state width="1388" height="273" key="GridCell.Tab.0.left" timestamp="1582886377054">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1868" height="275" key="GridCell.Tab.0.left" timestamp="1583095333557">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1868" height="275" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583095333557" />
     <state width="1388" height="273" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582886377054" />
-    <state width="1388" height="273" key="GridCell.Tab.0.right" timestamp="1582886377056">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1868" height="275" key="GridCell.Tab.0.right" timestamp="1583095333560">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
+    <state width="1868" height="275" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583095333560" />
     <state width="1388" height="273" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582886377056" />
     <state x="2181" y="457" key="NewPhpFileDialog" timestamp="1583073809838">
       <screen x="1440" y="0" width="1920" height="1080" />
@@ -125,5 +142,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="105" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583059812186" />
+    <state x="1981" y="48" width="838" height="1032" key="search.everywhere.popup" timestamp="1583085827201">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1981" y="48" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583085827201" />
   </component>
 </project>

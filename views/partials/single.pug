@@ -1,0 +1,26 @@
+br
+div(class="img-card col-lg-4 col-md-6 col-sm-12")
+    div(class="card mb-4 shadow-sm")
+        if img_url
+            img(src=img_url, class="bd-placeholder-img card-img-top", width="100%" alt="insta_pic.jpg")
+        else
+            img(src=data.img_url, class="card-img-top" alt="insta_pic.jpg")
+        div(class="card-body")
+            if img_url
+                button(href=img_url,
+                    class="btn btn-outline-primary btn-block",
+                    id=index
+                    type="submit"
+                    onclick="saveAs('" + img_url + "','insta.jpg')"
+                )
+                    i(class="fas fa-download mr-2")
+                    | Download
+            else
+                button(href=data.img_url,
+                    class="btn btn-outline-primary btn-block",
+                    type="submit",
+                    id="single",
+                    onclick="saveAs('" + data.img_url + "','insta.jpg')"
+                )
+                    i(class="fas fa-download mr-2")
+                    | Download

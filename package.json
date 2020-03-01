@@ -11,7 +11,7 @@
     "tslint": "tslint -c tslint.json -p tsconfig.json --fix",
     "postinstall": "npm-run-all clean tslint tsc copy-assets",
     "dev": "NODE_ENV=development npm-run-all postinstall start",
-    "start:dev": "nodemon --watch ./ -e ts,pug,css --exec npm run dev"
+    "start:dev": "nodemon --watch ./ -e ts,pug,css,js --exec npm run dev"
   },
   "engines": {
     "node": "11.14.0"

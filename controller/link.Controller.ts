@@ -11,7 +11,7 @@ interface ILinks {
 
 class LinkController {
     getInstagramLink = async (req: any, res: any) => {
-        const {body: {link}} = req;
+        const {body: {link}, query: {render: isToBeRendered }} = req;
 
         axios.get(link)
             .then(response => {
@@ -26,7 +26,10 @@ class LinkController {
                 const  g = JSON.parse(graphQLJSON);
                 const mediaObject = g.entry_data.PostPage[0].graphql.shortcode_media;
                 const filteredResult: any = filterIgData(mediaObject);
-                res.json(filteredResult);
+
+                isToBeRendered ?
+                    res.render('index', {url: link, data: filteredResult}) :
+                    res.json(filteredResult);
             })
             .catch(error => {
                 const errorMessage: string | any = {

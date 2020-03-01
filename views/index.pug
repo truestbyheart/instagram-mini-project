@@ -3,6 +3,15 @@ extends layout
 block content
     include partials/nav
     br
-    div(class="container is-fullhd")
+    div(class="container")
         div(class="level columns")
-          include partials/loading-input
+            include partials/input
+        if data
+            div(class="album py-5 bg-light")
+                div(class="container")
+                    div(class="row")
+                        if data.img_url
+                            include partials/single
+                        else
+                            each img_url,index in data.img_urls
+                                include partials/single
