@@ -4,14 +4,15 @@ block content
     include partials/nav
     br
     div(class="container")
-        div(class="level columns")
-            include partials/input
+        include partials/input
         if data
-            div(class="album py-5 bg-light")
+            div(class="album py-5 bg-light mt-2")
                 div(class="container")
                     div(class="row")
                         if data.img_url
                             include partials/single
-                        else
+                        else if data.img_urls
                             each img_url,index in data.img_urls
                                 include partials/single
+                        else
+                            include partials/single
