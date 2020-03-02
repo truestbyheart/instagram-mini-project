@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/input.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/input.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/single.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/single.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <updated>1582729347157</updated>
       <workItem from="1582729349959" duration="8458000" />
       <workItem from="1583054620992" duration="25815000" />
-      <workItem from="1583140077278" duration="6166000" />
+      <workItem from="1583140077278" duration="7991000" />
     </task>
     <servers />
   </component>
@@ -124,26 +123,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1868" height="275" key="GridCell.Tab.0.bottom" timestamp="1583099187800">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1388" height="185" key="GridCell.Tab.0.bottom" timestamp="1583166729212">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1868" height="275" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583099187800" />
-    <state width="1388" height="273" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582886377056" />
-    <state width="1868" height="275" key="GridCell.Tab.0.center" timestamp="1583099187797">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1388" height="185" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583166729212" />
+    <state width="1388" height="185" key="GridCell.Tab.0.center" timestamp="1583166729211">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1868" height="275" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583099187797" />
-    <state width="1388" height="273" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582886377055" />
-    <state width="1868" height="275" key="GridCell.Tab.0.left" timestamp="1583099187795">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1388" height="185" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583166729211" />
+    <state width="1388" height="185" key="GridCell.Tab.0.left" timestamp="1583166729210">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1868" height="275" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583099187795" />
-    <state width="1388" height="273" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582886377054" />
-    <state width="1868" height="275" key="GridCell.Tab.0.right" timestamp="1583099187798">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1388" height="185" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583166729210" />
+    <state width="1388" height="185" key="GridCell.Tab.0.right" timestamp="1583166729212">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1868" height="275" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583099187798" />
-    <state width="1388" height="273" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582886377056" />
+    <state width="1388" height="185" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583166729212" />
     <state x="2181" y="457" key="NewPhpFileDialog" timestamp="1583073809838">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
