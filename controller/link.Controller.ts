@@ -28,7 +28,7 @@ class LinkController {
                 const filteredResult: any = filterIgData(mediaObject);
 
                 isToBeRendered ?
-                    res.render('index', {url: link, data: filteredResult}) :
+                    res.render('index', {title: "Instr", url: link, data: filteredResult}) :
                     res.json(filteredResult);
             })
             .catch(error => {
