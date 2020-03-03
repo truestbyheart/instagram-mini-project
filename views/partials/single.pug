@@ -19,7 +19,7 @@ div(class="img-card col-lg-4 col-md-6 col-sm-12")
                     class="btn btn-outline-dark btn-block",
                     id=index
                     type="submit"
-                    onclick="saveAs('" + img_url + "','insta.jpg')"
+                    onclick="saveImage("+ index +")"
                 )
                     i(class="fas fa-download mr-2")
                     | Download
@@ -28,7 +28,7 @@ div(class="img-card col-lg-4 col-md-6 col-sm-12")
                     class="btn btn-outline-dark btn-block",
                     type="submit",
                     id="single",
-                    onclick="saveAs('" + data.img_url + "','insta.jpg')"
+                    onclick="saveImage()"
                 )
                     i(class="fas fa-download mr-2")
                     | Download
