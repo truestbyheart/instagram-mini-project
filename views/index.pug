@@ -1,5 +1,20 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    include partials/nav
+    br
+    div( role="main", class="flex-shrink-0")
+        div(class="container")
+            include partials/input
+            if data
+                div(class="album py-5 bg-light mt-2")
+                    div(class="container")
+                        div(class="row")
+                            if data.img_url
+                                include partials/single
+                            else if data.img_urls
+                                each img_url,index in data.img_urls
+                                    include partials/single
+                            else
+                                include partials/single
+    include partials/footer
