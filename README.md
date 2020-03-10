@@ -1,0 +1,2 @@
+# instagram-mini-project
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2283fa9fe3984133a1939f2e02356006)](https://app.codacy.com/manual/truestbyheart/instagram-mini-project?utm_source=github.com&utm_medium=referral&utm_content=truestbyheart/instagram-mini-project&utm_campaign=Badge_Grade_Settings)
