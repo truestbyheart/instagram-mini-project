@@ -1,30 +1,14 @@
 br
 div(class="img-card col-lg-4 col-md-6 col-sm-12")
     div(class="card mb-4 shadow-sm")
-        if img_url
-            img(src=img_url, class="bd-placeholder-img card-img-top", width="100%" alt="insta_pic.jpg")
-        else if data.video_url
-            video(class="bd-placeholder-img card-img-top",
-                controls="",
-                controlslist="download",
-                playsinline=""
-                src=data.video_url,
-                type="video/mp4"
-            )
-        else
+        if data.img_url
             img(src=data.img_url, class="card-img-top" alt="insta_pic.jpg")
+        else
+            img(src=data.post_data[n].img_url, class="card-img-top" alt="insta_pic.jpg")
         div(class="card-body")
-            if img_url
-                button(href=img_url,
-                    class="btn btn-outline-dark btn-block",
-                    id=index
-                    type="submit"
-                    onclick="saveImage("+ index +")"
-                )
-                    i(class="fas fa-download mr-2")
-                    | Download
-            else if data.img_url
-                button(href=data.img_url,
+            if data.img_url
+                button(
+                    href=data.img_url,
                     class="btn btn-outline-dark btn-block",
                     type="submit",
                     id="single",
@@ -33,4 +17,12 @@ div(class="img-card col-lg-4 col-md-6 col-sm-12")
                     i(class="fas fa-download mr-2")
                     | Download
             else
-                p(class="text-monoscope") Click on the three dots and select download.
+                button(
+                    href=data.post_data[n].img_url,
+                    class="btn btn-outline-dark btn-block",
+                    type="submit",
+                    id="single",
+                    onclick="saveImage()"
+                )
+                    i(class="fas fa-download mr-2")
+                    | Download
