@@ -12,9 +12,8 @@ block content
                         div(class="row")
                             if data.img_url
                                 include partials/single
-                            else if data.img_urls
-                                each img_url,index in data.img_urls
-                                    include partials/single
+                            else if data.post_data
+                                include partials/multiple
                             else
-                                include partials/single
+                                include partials/video
     include partials/footer

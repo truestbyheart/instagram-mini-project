@@ -46,8 +46,8 @@ export function filterIgData(mediaObject: any) {
 
 function checkIfVideo(mediaObject: IVideo) {
     return mediaObject.is_video ?
-        mediaObject.video_url :
-        mediaObject.display_url;
+        {video_url: mediaObject.video_url} :
+        {img_url: mediaObject.display_url};
 }
 
 
