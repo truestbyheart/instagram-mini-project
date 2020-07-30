@@ -3,6 +3,6 @@ import { postController } from './post.controller';
 
 const postRouter = Router();
 
-postRouter.post('link', postController.getInstagramPost);
+postRouter.post('/link', postController.getInstagramPost);
 
 export default postRouter;

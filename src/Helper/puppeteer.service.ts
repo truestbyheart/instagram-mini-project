@@ -1,5 +1,5 @@
 import puppeteer, { Browser, Page } from 'puppeteer';
-import devices from 'puppeteer/DeviceDescriptors';
+// import devices from 'puppeteer/DeviceDescriptors';
 import { HEADLESS_STATUS } from '../Config/app.config';
 
 interface Puppeteer {
@@ -20,6 +20,7 @@ class PuppeteerService {
 
     return { browser, page };
   }
+
   async startBrowser(): Promise<Puppeteer> {
     const launchOptions = {
       headless: JSON.parse(HEADLESS_STATUS),
@@ -28,7 +29,7 @@ class PuppeteerService {
 
     const browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
-    await page.emulate(devices['iPhone 6']);
+    await page.emulate(puppeteer.devices['iPhone 6']);
     await page.setDefaultNavigationTimeout(0);
 
     return { browser, page };
@@ -43,7 +44,7 @@ class PuppeteerService {
     const browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
     await page.setCookie(...JSON.parse(coookie));
-    await page.emulate(devices['iPhone 6']);
+    // await page.emulate(devices['iPhone 6']);
     await page.setDefaultNavigationTimeout(0);
 
     return { browser, page };

@@ -9,6 +9,7 @@ export function filterIgData(mediaObject: any) {
     node: { text: postText },
   } = mediaObject.edge_media_to_caption.edges[0];
   const { is_verified, profile_pic_url, username, is_private, full_name } = mediaObject.owner;
+
   /**
    * @description check if the instagram post is a list of image posts or a single post.
    */
