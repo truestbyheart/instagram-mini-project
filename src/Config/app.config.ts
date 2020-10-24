@@ -8,5 +8,4 @@ const dir =
 
 const result = dotenv.config({ path: dir });
 
-export const TOKEN_KEY: any = process.env.TOKEN_KEY;
-export const HEADLESS_STATUS: any = process.env.HEADLESS_STATUS;
+export const { TOKEN_KEY, HEADLESS_STATUS, MONGO_URL, PORT }: any = process.env;

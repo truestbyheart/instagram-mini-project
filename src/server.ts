@@ -1,11 +1,18 @@
-import { config } from 'dotenv';
+import mongoose from 'mongoose';
+import { PORT, MONGO_URL } from './Config/app.config';
 import http from 'http';
 import app from './app';
 
-config();
-
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 3000;
-
-server.listen(PORT, () => console.info('App running on port: ' + PORT));
+mongoose
+  .connect(MONGO_URL, {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.info('mongoDB is running');
+    server.listen(PORT || 3000, () => console.info('App running on port: ' + PORT || 3000));
+  })
+  .catch((error) => new Error(error));
