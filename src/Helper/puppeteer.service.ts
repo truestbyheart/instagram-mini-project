@@ -1,5 +1,4 @@
 import puppeteer, { Browser, Page } from 'puppeteer';
-// import devices from 'puppeteer/DeviceDescriptors';
 import { HEADLESS_STATUS } from '../Config/app.config';
 
 interface Puppeteer {
@@ -7,7 +6,7 @@ interface Puppeteer {
   page: Page;
 }
 
-class PuppeteerService {
+export class PuppeteerService {
   async startDesktopBrowser(): Promise<Puppeteer> {
     const launchOptions = {
       headless: JSON.parse(HEADLESS_STATUS),
