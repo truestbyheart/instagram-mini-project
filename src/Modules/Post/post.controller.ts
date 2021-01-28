@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { INTERNAL_SERVER_ERROR, OK } from '../../Helper/statusCodes';
-import { puppeteerService } from '../../Helper/puppeteer.service';
+import { puppeteerService } from '../../Services/puppeteer.service';
 import cheerio from 'cheerio';
 import { filterIgData } from '../../Helper/igPostDifference';
 
