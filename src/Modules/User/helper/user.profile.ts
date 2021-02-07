@@ -68,7 +68,7 @@ class UserProfile extends PuppeteerService {
   }
 
   async getFollowers(handle: string): Promise<any> {
-    const { page, browser } = await this.startBrowser();
+    const { page } = await this.startBrowser();
 
     // making an api query to instagram api
     // await page.setRequestInterception(true);

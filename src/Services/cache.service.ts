@@ -3,12 +3,12 @@ import cache from '../Config/redis.config';
 export const cacheData = (key: string, data: string, expiration: number | null = null): Promise<boolean> =>
   new Promise<boolean>((resolve, reject) => {
     if (!expiration) {
-      cache.set(key, data, (err, data) => {
+      cache.set(key, data, (err) => {
         if (err) reject(err);
         resolve(true);
       });
     } else {
-      cache.setex(key, expiration, data, (err, data) => {
+      cache.setex(key, expiration, data, (err) => {
         if (err) reject(err);
         resolve(true);
       });

@@ -1,1 +1,19 @@
 version: 2.1
+orbs:
+  node: circleci/node@3.0.1
+jobs:
+  build:
+    executor: node/default
+    steps:
+      - setup_remote_docker:
+          version: 19.03.13
+      - run:
+          name: Build Docker image
+          command: |
+            docker build -t instr-dockerize:circleci .
+            docker images
+workflows:
+  build-test-deploy:
+    jobs:
+      - build
+
