@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "clean": "rimraf build/*",
     "lint": "node_modules/.bin/eslint . --ext .ts --fix",
-    "postinstall": "npm-run-all clean lint tsc",
+    "postinstall": "npm-run-all clean tsc",
     "dev": "set NODE_ENV=development && ts-node src/server.ts",
     "start:dev": "nodemon --watch ./ -e ts,pug,css,js --exec npm run dev",
     "win:dev": "nodemon --watch ./ -e ts --exec npm-run-all lint dev"
