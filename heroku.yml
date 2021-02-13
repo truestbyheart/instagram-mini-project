@@ -3,7 +3,7 @@ setup:
     - plan: heroku-redis
       as: REDIS
   config:
-    APP_NAME: instr-dockerize
+    APP_NAME: instr-app
 build:
   docker:
     web: Dockerfile

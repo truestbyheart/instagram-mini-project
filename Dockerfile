@@ -9,11 +9,9 @@ RUN apt-get install -yyq fonts-liberation
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package*.json ./build ./
 
-RUN npm install
-RUN npm run postinstall
-RUN npm-prune --production
+RUN npm install --production
 
 COPY . .
 
