@@ -3,14 +3,25 @@ orbs:
   node: circleci/node@3.0.1
   heroku: circleci/heroku@1.0.1
 jobs:
-  deploy:
-    executor: heroku/default
+  build:
+    executor: node/default
     steps:
       - checkout
       - node/install-packages
       - run:
          name: build application
          command: npm run postinstall
+      - setup_remote_docker:
+          version: 19.03.13
+      - run:
+          name: Build Docker image
+          command: |
+            docker build -t instr-app:circleci .
+            docker images
+  deploy:
+    executor: heroku/default
+    steps:
+      - checkout
       - run:
           name: Storing previous commit
           command: |
@@ -27,5 +38,8 @@ jobs:
 workflows:
   build-test-deploy:
     jobs:
-      - deploy
+      - build
+      - deploy:
+         requires:
+          - build
 
