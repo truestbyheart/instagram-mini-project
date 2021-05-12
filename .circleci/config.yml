@@ -1,0 +1,31 @@
+version: 2.1
+orbs:
+  node: circleci/node@3.0.1
+  heroku: circleci/heroku@1.0.1
+jobs:
+  deploy:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+         name: build application
+         command: npm run postinstall
+      - run:
+          name: Storing previous commit
+          command: |
+            git rev-parse HEAD > ./commit.txt
+      - heroku/install
+      - setup_remote_docker:
+          version: 19.03.13
+      - run:
+          name: Pushing to heroku registry
+          command: |
+            heroku container:login
+            heroku container:push web --arg NODE_ENV=production -a $HEROKU_APP_NAME
+            heroku container:release web -a $HEROKU_APP_NAME 
+workflows:
+  build-deploy:
+    jobs:
+      - deploy
+
